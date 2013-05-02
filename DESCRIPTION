@@ -1,0 +1,12 @@
+Package: noamtools
+Title: Convenience functions
+Description: This package contains functions that were in my .Rprofile.
+Version: 0.1
+Author: Noam Ross
+Maintainer: Noam Ross <yourfault@somewhere.net>
+URL: https://github.com/noamross/noamtools
+Depends:
+    plyr
+License: GPL (>= 2)
+Collate:
+    'proftable.R'
