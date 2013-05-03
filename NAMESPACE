@@ -1,2 +1,4 @@
+export(.ls.objects)
+export(lso)
 export(proftable)
 import(plyr)

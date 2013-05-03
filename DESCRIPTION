@@ -10,3 +10,4 @@ Depends:
 License: GPL (>= 2)
 Collate:
     'proftable.R'
+    'lso.R'
