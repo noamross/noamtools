@@ -6,10 +6,15 @@
 #'@export
 lsp <-function(package, all.names = FALSE, pattern)
 {
-  package <- deparse(substitute(package))
+  namesp <- deparse(substitute(package))
   ls(
-    pos = paste("package", package, sep = ":"),
+    name = paste("package", namesp, sep = ":"),
     all.names = all.names,
     pattern = pattern
   )
 }
+
+#Some alternatives
+#http://yusung.blogspot.com/2007/08/get-invisible-functions-or-internal.html
+#lsf.str to get the function calls, as well.
+#use ls(asNamespace("package")) to get EVERYTHING available to :::

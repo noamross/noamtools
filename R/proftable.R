@@ -27,7 +27,7 @@ proftable <- function(file, lines=10) {
   filelines <- grep("#File", profdata[,1])
   files <- aaply(as.matrix(profdata[filelines,]), 1, function(x) {
                         paste(na.omit(x), collapse = " ") })
-  profdata <- profdata[-filelines,]
+  if(length(filelines) > 0) profdata <- profdata[-filelines,]
   total.time <- interval*nrow(profdata)
   profdata <- as.matrix(profdata[,ncol(profdata):1])
   profdata <- aaply(profdata, 1, function(x) {
