@@ -45,10 +45,14 @@ proftable <- function(file, lines=10) {
   rownames(stacktable) <- NULL
   stacktable <- head(stacktable, lines)
   na.cols <- which(sapply(stacktable, function(x) all(is.na(x))))
-  stacktable <- stacktable[-na.cols]
+  if(length(na.cols) > 0) stacktable <- stacktable[-na.cols]
   parent.cols <- which(sapply(stacktable, function(x) length(unique(x)))==1)
-  parent.call <- paste0(paste(stacktable[1,parent.cols], collapse = " > ")," >")
-  stacktable <- stacktable[,-parent.cols]
+  if (length(parent.cols) > 0) {
+    stacktable <- stacktable[,-parent.cols]
+    parent.call <- paste0(paste(stacktable[1,parent.cols], collapse = " > ")," >")
+  } else {
+    parent.call <- "None"
+  }
   calls <- aaply(as.matrix(stacktable[2:ncol(stacktable)]), 1, function(x) {
                    paste(na.omit(x), collapse= " > ")
                      })
