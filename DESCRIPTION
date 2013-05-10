@@ -12,3 +12,4 @@ Collate:
     'proftable.R'
     'lso.R'
     'lsp.R'
+    'txtTimerBar.R'
