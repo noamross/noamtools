@@ -1,7 +1,12 @@
 #'Noam's default ggplot2 styling
+<<<<<<< HEAD
 #'@import ggplot2 grid
 #'@export
 theme_nr <-  ggplot2::theme(text=element_text(family="Lato Light", size=14),
+=======
+#'@import ggplot2 grid gridExtra
+theme_nr <-  theme(text=element_text(family="Lato Light", size=14),
+>>>>>>> d3296b1442070c7581d4d217846dee42e07f975f
         panel.grid.major.x=element_blank(),
         panel.grid.minor.x=element_blank(),
         panel.grid.minor.y=element_blank(),
