@@ -13,3 +13,4 @@ Collate:
     'lso.R'
     'lsp.R'
     'txtTimerBar.R'
+    'theme_nr.R'
