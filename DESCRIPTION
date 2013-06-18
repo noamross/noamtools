@@ -14,3 +14,4 @@ Collate:
     'lsp.R'
     'txtTimerBar.R'
     'theme_nr.R'
+    'help_console.R'
