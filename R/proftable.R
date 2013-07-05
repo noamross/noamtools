@@ -48,8 +48,8 @@ proftable <- function(file, lines=10) {
   if(length(na.cols) > 0) stacktable <- stacktable[-na.cols]
   parent.cols <- which(sapply(stacktable, function(x) length(unique(x)))==1)
   if (length(parent.cols) > 0) {
-    stacktable <- stacktable[,-parent.cols]
     parent.call <- paste0(paste(stacktable[1,parent.cols], collapse = " > ")," >")
+    stacktable <- stacktable[,-parent.cols]
   } else {
     parent.call <- "None"
   }
