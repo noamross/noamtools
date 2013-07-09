@@ -1,7 +1,7 @@
 #'Noam's default ggplot2 styling
 #'@import ggplot2 grid
 #'@export
-theme_nr <- function(...) {
+theme_nr <- function() {
   
   theme(text=element_text(family="Lato Light", size=14),
         panel.grid.major.x=element_blank(),
@@ -15,6 +15,5 @@ theme_nr <- function(...) {
         legend.key.size=unit(1.5, "cm"),
         legend.text=element_text(size=22),
         axis.title=element_text(size=24),
-        axis.text=element_text(color="black",size=13)) +
-    theme_update(...)
+        axis.text=element_text(color="black",size=13))
 }

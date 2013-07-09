@@ -2,7 +2,7 @@
 \alias{theme_nr}
 \title{Noam's default ggplot2 styling}
 \usage{
-  theme_nr(...)
+  theme_nr()
 }
 \description{
   Noam's default ggplot2 styling
