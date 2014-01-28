@@ -5,7 +5,7 @@ export(lsp)
 export(proftable)
 export(theme_nr)
 export(txtTimerBar)
-
+import(ggplot2)
 import(grid)
 import(plyr)
 import(tools)
