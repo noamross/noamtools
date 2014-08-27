@@ -1,4 +1,5 @@
-#'@import yaml stringi
+#'@import yaml
+#'@importFrom stringi stri_locate_all_fixed
 #'
 yaml_print = function(obj, paginate = TRUE, nlines=20, number = TRUE) {
   cat("Object '", deparse(substitute(obj)), "' of class: ",
