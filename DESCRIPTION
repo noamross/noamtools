@@ -5,13 +5,9 @@ Version: 0.1
 Author: Noam Ross
 Maintainer: Noam Ross <yourfault@somewhere.net>
 URL: https://github.com/noamross/noamtools
-Depends:
-    plyr
+Imports:
+    plyr,
+    ggplot2,
+    grid,
+    tools
 License: GPL (>= 2)
-Collate:
-    'proftable.R'
-    'lso.R'
-    'lsp.R'
-    'txtTimerBar.R'
-    'theme_nr.R'
-    'help_console.R'
