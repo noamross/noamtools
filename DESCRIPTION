@@ -9,5 +9,7 @@ Imports:
     plyr,
     ggplot2,
     grid,
-    tools
+    tools,
+    stringi,
+    yaml
 License: GPL (>= 2)
