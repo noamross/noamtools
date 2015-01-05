@@ -17,6 +17,7 @@
 #'"as is" rather than in a code or verbatim environment
 #'@param lines Optional. An integer vector specifying which lines to print
 #'@param before,after Text to insert before or after the help file, such as
+#'@param package A character string containing the package name to search. Necessary if two packages share a function name.
 #'\code{<quote>} and \code{</quote>} for printing the text as quoted HTML  
 #'@export
 #'@import tools
@@ -24,10 +25,10 @@
 #' txt <- help_console(c)
 #' help_console(optim, "html", lines=1:25, before="<quote>", after="</quote>")
 help_console <- function(topic, format=c("text", "html", "latex", "Rd"),
-                         lines=NULL, before=NULL, after=NULL) {  
+                         lines=NULL, before=NULL, after=NULL, package = NULL) {  
   format=match.arg(format)
   if (!is.character(topic)) topic <- deparse(substitute(topic))
-  helpfile = utils:::.getHelpFile(help(topic))
+  helpfile = utils:::.getHelpFile(help(topic, package = (package)))
 
   hs <- capture.output(switch(format, 
                               text=tools:::Rd2txt(helpfile),
