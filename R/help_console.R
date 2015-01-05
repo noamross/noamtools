@@ -1,4 +1,6 @@
+
 #'Return the text of a help file as a string
+#
 #'
 #'This function returns the contents of an R help file to the console
 #'as a character vector, printing it for easy reading.  It is intended for
@@ -19,8 +21,8 @@
 #'@export
 #'@import tools
 #'@examples help_console(c)
-#'txt <- help_console(c)
-#'help_console(optim, "html", lines=1:25, before="<quote>", after="</quote>")
+#' txt <- help_console(c)
+#' help_console(optim, "html", lines=1:25, before="<quote>", after="</quote>")
 help_console <- function(topic, format=c("text", "html", "latex", "Rd"),
                          lines=NULL, before=NULL, after=NULL) {  
   format=match.arg(format)
