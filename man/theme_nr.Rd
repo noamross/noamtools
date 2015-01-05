@@ -3,9 +3,9 @@
 \name{theme_nr}
 \alias{theme_nr}
 \title{Noam's default ggplot2 styling}
-\format{\preformatted{List of 13
+\format{\preformatted{List of 14
  $ text              :List of 8
-  ..$ family    : chr "Lato Light"
+  ..$ family    : chr "Lato"
   ..$ face      : NULL
   ..$ colour    : NULL
   ..$ size      : num 14
@@ -51,21 +51,31 @@
   ..$ angle     : NULL
   ..$ lineheight: NULL
   ..- attr(*, "class")= chr [1:2] "element_text" "element"
- $ axis.title        :List of 8
-  ..$ family    : NULL
-  ..$ face      : NULL
-  ..$ colour    : NULL
-  ..$ size      : num 24
-  ..$ hjust     : NULL
-  ..$ vjust     : NULL
-  ..$ angle     : NULL
-  ..$ lineheight: NULL
-  ..- attr(*, "class")= chr [1:2] "element_text" "element"
  $ axis.text         :List of 8
   ..$ family    : NULL
   ..$ face      : NULL
   ..$ colour    : chr "black"
   ..$ size      : num 13
+  ..$ hjust     : NULL
+  ..$ vjust     : NULL
+  ..$ angle     : NULL
+  ..$ lineheight: NULL
+  ..- attr(*, "class")= chr [1:2] "element_text" "element"
+ $ axis.title        :List of 8
+  ..$ family    : NULL
+  ..$ face      : NULL
+  ..$ colour    : NULL
+  ..$ size      : num 22
+  ..$ hjust     : NULL
+  ..$ vjust     : NULL
+  ..$ angle     : NULL
+  ..$ lineheight: NULL
+  ..- attr(*, "class")= chr [1:2] "element_text" "element"
+ $ title             :List of 8
+  ..$ family    : NULL
+  ..$ face      : NULL
+  ..$ colour    : NULL
+  ..$ size      : num 22
   ..$ hjust     : NULL
   ..$ vjust     : NULL
   ..$ angle     : NULL
