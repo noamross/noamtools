@@ -17,7 +17,7 @@ printed from most time-intensive to least.}
 table showing the most time-intensive function calls.
 }
 \details{
-Line numbers are #' included if \code{Rprof()} was run with
+Line numbers are included if \code{Rprof()} was run with
 \code{line.numbering=TRUE}. If it was run with \code{memory.profiling=TRUE},
 this function will probably break.
 

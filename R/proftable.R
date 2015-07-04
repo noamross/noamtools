@@ -3,7 +3,7 @@
 #' \code{proftools} parses a profiling file and prints an easy-to-understand
 #' table showing the most time-intensive function calls. 
 #' 
-#' Line numbers are #' included if \code{Rprof()} was run with 
+#' Line numbers are included if \code{Rprof()} was run with 
 #' \code{line.numbering=TRUE}. If it was run with \code{memory.profiling=TRUE},
 #' this function will probably break.
 #' 
