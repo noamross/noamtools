@@ -22,8 +22,7 @@ proftable <- function(file, lines = 10) {
   interval <- as.numeric(strsplit(profdata[1L], "=")[[1L]][2L]) / 1e+06
   filelines <- grep("#File", profdata)
   files <- profdata[filelines]
-  if (length(filelines) > 0)
-    profdata <- profdata[-1:-filelines]
+    profdata <- profdata[-c(1, filelines)]
   total.time <- interval * length(profdata)
   ncalls <- length(profdata)
   profdata <- gsub("\\\"| $", "", profdata)
@@ -47,11 +46,12 @@ proftable <- function(file, lines = 10) {
   attr(stacktable, "parent.call") <- parent.call
   attr(stacktable, "files") <- files
   attr(stacktable, "total.pct.time") <- frac
-  cat("\n")
   print(stacktable, row.names=FALSE, right=FALSE, digits=3)
+  if(length(files) > 0) {
   cat("\n")
   cat(paste(files, collapse="\n"))
   cat("\n")
+  }
   cat(paste("\nParent Call:", parent.call))
   cat(paste("\n\nTotal Time:", total.time, "seconds\n"))
   cat(paste0("Percent of run time represented: ", format(frac, digits=3)), "%")
