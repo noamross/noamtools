@@ -11,6 +11,5 @@ Imports:
     grid,
     tools,
     stringi,
-    yaml,
-    viridis
+    yaml
 License: GPL (>= 2)
