@@ -2,10 +2,12 @@
 #'@import ggplot2 grid
 #'@export
 theme_nr <-theme(text=element_text(family="Lato", face = "plain", size=14),
+        panel.border = element_blank(),
         panel.grid.major.x=element_blank(),
         panel.grid.minor.x=element_blank(),
         panel.grid.minor.y=element_blank(),
         panel.grid.major.y=element_line(colour="#ECECEC", size=0.5, linetype=1),
+        axis.line = element_blank(),
         axis.ticks.y=element_blank(),
         panel.background=element_blank(),
         legend.title=element_blank(),
