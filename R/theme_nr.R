@@ -17,4 +17,5 @@ theme_nr <-theme(text=element_text(family="Lato", face = "plain", size=14),
         axis.text=element_text(),
         axis.title=element_text(),
         title=element_text(),
-        panel.background = element_blank())
+        panel.background = element_rect(fill = "transparent", colour = NA),
+        plot.background = element_rect(fill = "transparent", colour = NA))
