@@ -11,5 +11,8 @@ Imports:
     grid,
     tools,
     stringi,
-    yaml
-License: GPL (>= 2)
+    yaml,
+    utils
+RoxygenNote: 6.1.1
+Encoding: UTF-8
+License: MIT + file LICENSE
